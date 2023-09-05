@@ -39,6 +39,12 @@
 
         function success(result) {
             console.log(result);
+
+            document.getElementById('result').innerHTML = `
+            <h2>Succes!</h2>
+            <p><a href="${result}">${result}</a></p>
+            `;
+
         }
 
         function error(err){
